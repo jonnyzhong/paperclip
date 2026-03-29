@@ -5,7 +5,7 @@
   },
   "deploy": {
     "startCommand": "node --import ./server/node_modules/tsx/dist/loader.mjs server/dist/index.js",
-    "healthcheckPath": "/",
+    "healthcheckPath": "/api/health",
     "restartPolicyType": "ON_FAILURE"
   }
 }
