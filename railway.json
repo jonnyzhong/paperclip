@@ -1,0 +1,11 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "dockerfilePath": "Dockerfile.railway"
+  },
+  "deploy": {
+    "startCommand": "node --import ./server/node_modules/tsx/dist/loader.mjs server/dist/index.js",
+    "healthcheckPath": "/",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
